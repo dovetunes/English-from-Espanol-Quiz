@@ -1,5 +1,5 @@
 //User indicates they are ready
-//Randomly produced question will appear on the screen 
+//Randomly produced question will appear on the screen
 //User answers question mentally and presses Button to have the reveal appear
 //User will hit Next Question Button for more questions
 //User ends session and find out # of questions answered w/ deathstar button.
@@ -16,12 +16,12 @@ var answer
 var count = 0;
 var keepAsking = true;
 
-//1. Random question and answer generated                         
+//1. Random question and answer generated
   function go() {
-   randomNumber = Math.floor(Math.random() * (questions.length)); 
-   question = questions[randomNumber][0] ;   
+   randomNumber = Math.floor(Math.random() * (questions.length));
+   question = questions[randomNumber][0] ;
    answer =  questions[randomNumber][1] ;
-  
+
 //Add text to Question and Answer
      $(".quiz span").text(question);
      $(".quizAnswer span").text(answer);
@@ -29,15 +29,18 @@ var keepAsking = true;
      $(".quizAnswer span").hide();
      $(".nextButton").hide();
 //2. Add Button
-     $(".quizAnswer").append("<button>Click here to show the answer!!!</button>");
+      var newButton = $('<button></button>');
+      newButton.html('Click here to show the answer!!!');
+      newButton.addClass('new-button');
+     $(".quizAnswer").append(newButton);
 //3. When Click
-     $("button").click(function(){
+     $(".new-button").click(function(){
    // Show answer
         $(this).prev().show();
    //Remove button from Answer
         $(this).remove();
    //4. Show Next button
-        $(".nextButton").show().text("Next Question");     
+        $(".nextButton").show().text("Next Question");
    });
   }
 
@@ -48,7 +51,7 @@ var keepAsking = true;
    $(".nextButton").click(function(){
       go();
 //Add counter
-      count += 1;     
+      count += 1;
 });
 
 //Tell how many questions were asked

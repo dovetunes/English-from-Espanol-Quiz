@@ -1,0 +1,86 @@
+body {
+   position: relative;
+  /*background: tomato url(../img/education.png) repeat 0 0;*/
+  background-size: 400px auto;
+  font-family: sans-serif;
+  min-height: 100%;
+}
+
+.main {
+   display: block;
+   height: 540px;
+}
+
+img {
+  display: block;
+  border-radius: 90px;
+  width: 250px;
+  margin: 50px auto 20px;
+}
+
+button {
+  background: #dae1e4;
+  border: none;
+  border-radius: 5px;
+  color: #1d3c6a;
+  font-size: 24px;
+  width: 480px;
+  padding: 40px 0;
+  margin: -40px -20px;
+  outline: none;
+  cursor: pointer;
+}
+
+.nextButton {
+  background: #dae1e4;
+  border: none;
+  border-radius: 5px;
+  color: #1d3c6a;
+  font-size: 24px;
+  width: 200px;
+  height: 80px;
+  padding: 20px 0;
+  margin: 0px auto;
+   display: block;
+   text-align: center;
+  outline: none;
+  cursor: pointer;
+}
+
+.killButton {
+  background: tomato;
+  border: none;
+  border-radius: 5px;
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  margin: 30px 0 0 90%;
+  cursor: pointer;
+}
+
+.kill {
+   margin: 0 auto;
+   width: 40px;
+   height: 40px;
+}
+
+.quiz,
+.quizAnswer {
+	background: pink;
+  width: 440px;
+  margin: 0 auto 20px;
+  border-radius: 5px;
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 24px
+}
+
+.quiz span,
+.answer span {
+  color: #333;
+}
+
+footer {
+   position: absolute;
+}
+

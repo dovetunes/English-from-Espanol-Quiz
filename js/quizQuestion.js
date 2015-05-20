@@ -6,5 +6,6 @@ var questions = [
    ['How do you ask "A que hora es la fiesta?"', "What time is the party?"],
    ['How do you say "La renion es a las ocho."', "The meeting is at eight o'clock."],
    ['How do you ask "Te gusta el cabello?"', "Do you like my hair?"],
-   ['How do you say "Me gusta el vestido."', "I like your dress."]
+   ['How do you say "Me gusta el vestido."', "I like your dress."],
+   ['How do you say "La vida pura?"', "go to the bedroom"]
 ];
